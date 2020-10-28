@@ -1,0 +1,41 @@
+.selectedPage{
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+
+.pages{
+    cursor: pointer;
+    margin: 2rem 5rem;
+    text-align: center;  
+    background-color: #EBEBEB;  
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pages button{
+  border: none;
+}
+
+.pagesNumber{
+    padding: 0.5rem;
+}
+
+.pages button:hover, 
+.pages span:hover{
+  animation:blinking 0.6s infinite;
+}
+
+@keyframes blinking{
+  0%{color:rgba(0, 0, 0, 1);}
+  50%{color:rgba(0, 0, 0, 0);}
+  100%{color:rgba(0, 0, 0, 1);}
+}
+
+@media (max-width: 767px) {
+  .pages{
+    margin: 2rem 0;
+  }
+}

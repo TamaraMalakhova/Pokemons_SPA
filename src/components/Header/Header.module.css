@@ -1,0 +1,41 @@
+.header{
+    background-color: #EBEBEB;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+  }
+
+.header button{
+  border: none;
+  cursor: pointer;
+}
+
+  .backBtn{
+    margin-left: 1rem;
+  }
+
+  .loginBlock{
+    display: flex;
+  }
+
+  .loginBlock button{
+    margin-right: 1rem;
+    float: right;
+    text-align: right;
+    
+  }
+
+  .header button:hover{
+    animation:blinking 0.5s infinite;
+  }
+
+  @keyframes blinking{
+    0%{color:rgba(0, 0, 0, 1);}
+    50%{color:rgba(0, 0, 0, 0);}
+    100%{color:rgba(0, 0, 0, 1);}
+}
+
+

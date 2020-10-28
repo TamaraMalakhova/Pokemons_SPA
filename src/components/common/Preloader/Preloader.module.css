@@ -1,0 +1,21 @@
+.preloader{
+    position: relative;
+}
+
+.preloaderBody{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.preloader{
+    animation:appear 2s;
+}
+  
+@keyframes appear{
+    from { opacity: 0.3; }
+    to { opacity: 0.9; }
+  }

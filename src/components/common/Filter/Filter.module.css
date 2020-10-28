@@ -1,0 +1,10 @@
+.filter{
+    background-color: #FAFAFA;
+    margin: 1rem 0.2rem;
+    width: 11rem;
+}
+
+select{
+    width: 100%;
+    height: 3rem;
+}
