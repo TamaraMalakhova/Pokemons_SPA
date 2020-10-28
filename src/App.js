@@ -12,13 +12,14 @@ function App(props) {
   return (
     <div className="App">
       <Switch>
-          <Route path='*' render={ 
+          <Route exact path='/' render={ 
             () => props.isAuth ? <Redirect to={'/pokemons'} /> : <Redirect to={'/login'} />
           } />
           <Route path='/pokemon/:id?' render={()=> <PokemonPageContainer />} />
           <Route path='/pokemons' render={() => <PokemonsContainer/>} />
           <Route path='/login' render={() => <Login />} />
           <Route path='/SMSconfirm' component={OtpPage} />
+          <Route path = '*' render= {()=><div>404 NOT FOUND</div>} />
         </Switch>
     </div>
   );

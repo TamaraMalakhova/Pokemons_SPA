@@ -27,6 +27,10 @@
     padding-top: 2rem;
 }
 
+.pokemonPage img{
+    width: 17rem;
+}
+
 @media (max-width: 767px) {
     .attacksDescription{
         text-align: center;
