@@ -18,8 +18,7 @@ let initialState = {
     pageSize: 4,
     totalPokemonsCount: 0,
     currentPage: 1,
-    isFetching: false,
-    followingInProgress: []
+    isFetching: false
 };
 
 const pokemonsReducer = (state = initialState, action) => {
